@@ -1,8 +1,7 @@
 import streamlit as st
-
 import pandas as pd
 import numpy as np
-math
+import math
 import plotly.express as px  # <-- Nueva librería para el gráfico profesional
 
 # --- FUNCIÓN PARA CALCULAR DISTANCIA ESPACIAL (Haversine) ---
@@ -223,4 +222,5 @@ if st.button("Buscar Estación y Calcular Balance"):
                 st.plotly_chart(fig, use_container_width=True)
 
     except Exception as e:
+
         st.error(f"⚠️ Ocurrió un error inesperado al procesar los datos: {e}")
